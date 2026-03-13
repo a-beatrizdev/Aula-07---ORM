@@ -28,7 +28,7 @@ class Aluno(Base):
     def __repr__(self):
         return f"Produto ( id={self.id} - nome={self.nome} - idade={self.idade} - curso={self.curso})" 
     
-engine = create_engine("sqlite:///estoque.db", echo=True) 
+engine = create_engine("sqlite:///alunos.db", echo=True) 
 Base.metadata.create_all(engine) 
 Session = sessionmaker(bind=engine)
 session = Session()
