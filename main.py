@@ -13,7 +13,6 @@ from sqlalchemy.orm import declarative_base
 # Importa a ferramenta para criar sessões no banco
 from sqlalchemy.orm import sessionmaker
 
-
 # Criar a classe base do orm
 Base = declarative_base() 
 
